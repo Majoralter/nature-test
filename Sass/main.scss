@@ -1,0 +1,115 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Rose', cursive;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+    height: 100vh;
+    padding: 3rem;
+    background-color: #F3C178;
+
+    h1{
+        font-size: 7rem;
+        color: #121420;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: row;
+
+        img{
+            position: absolute;
+            height: 350px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    
+        img:nth-child(1){
+            left: 20rem;
+            rotate: -22deg;
+            z-index: 6;
+            margin-top: 5rem;
+        }
+
+        img:nth-child(2){
+            left: 25rem;
+            rotate: -13deg;
+            z-index: 5;
+            margin-top: 3rem;
+        }
+        img:nth-child(3){
+            left: 30rem;
+            rotate: -10deg;
+            z-index: 4;
+            margin-top: 2rem;
+        }
+
+        img:nth-child(4){
+            left: 40rem;
+            margin-top: 1rem;
+        }
+
+        img:nth-child(5){
+            right: 30rem;
+            rotate: 10deg;
+            margin-top: 2rem;
+        }
+        img:nth-child(6){
+            right: 25rem;
+            rotate: 13deg;
+            margin-top: 3rem;
+        }
+        img:nth-child(7){
+            right: 20rem;
+            rotate: 22deg;
+            margin-top: 5rem;
+        }
+    }
+}
+
+section{
+    height: 100vh;
+}
+
+.section-one{
+    position: relative;
+    overflow: hidden;
+    background-color: #5C8001;
+    div{
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        color: #070707;
+    }
+
+    .one{
+        background-color: #3A1772;
+        transform: translateY(-100vh);
+    }
+
+    .two{
+        background-color: #F7CB15;
+        transform: translateX(-100vw);
+    }
+
+    .three{
+        background-color: #F55D3E;
+        transform: translateX(100vw);
+    }
+}
