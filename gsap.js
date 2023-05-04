@@ -47,7 +47,7 @@ const tlTwo = gsap.timeline({
         pin: true,
         scrub: true,
         start: "top top",
-        end: "bottom top"
+        end: "bottom bottom"
     }
 })
 
